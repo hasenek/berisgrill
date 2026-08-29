@@ -1,8 +1,7 @@
 {{- $s := site.Data.site -}}
 <header class="site-head">
   <a class="brand" href="{{ "/" | relURL }}">
-    <span class="brand-mark" aria-hidden="true">B</span>
-    <span class="brand-name">{{ $s.business_name }}</span>
+    <img class="brand-logo" src="{{ "img/logo.jpg" | relURL }}" alt="{{ $s.business_name }}">
   </a>
   <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
   <label for="nav-toggle" class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></label>
