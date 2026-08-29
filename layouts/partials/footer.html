@@ -1,0 +1,21 @@
+{{- $s := site.Data.site -}}
+<footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-cta">
+      <p class="eyebrow">Hungry?</p>
+      <h2>Call {{ $s.business_name }}.</h2>
+      <a class="btn btn-accent" href="tel:{{ $s.contact.phone_tel }}">{{ $s.contact.phone_display }}</a>
+      <p class="foot-fine">{{ $s.order_info.lead_time }}</p>
+    </div>
+    <div class="foot-meta">
+      <p class="brand-name">{{ $s.business_name }}</p>
+      <p class="foot-fine">{{ $s.contact.service_area }}</p>
+      {{ with $s.contact.email }}<p class="foot-fine"><a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
+      <p class="foot-social">
+        {{ with $s.social.instagram }}<a href="{{ . }}" target="_blank" rel="noopener">Instagram</a>{{ end }}
+        {{ with $s.social.facebook }}<a href="{{ . }}" target="_blank" rel="noopener">Facebook</a>{{ end }}
+      </p>
+    </div>
+  </div>
+  <p class="foot-copy">© {{ now.Year }} {{ $s.business_name }}. Seattle, WA.</p>
+</footer>

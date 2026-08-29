@@ -1,0 +1,56 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# THE BUSINESS'S FACTS LIVE HERE. Edit this one file to change the name,
+# phone number, service area, socials, and homepage copy. No code involved.
+# ─────────────────────────────────────────────────────────────────────────────
+
+business_name: "Beri's Grill"
+tagline: "Fire-grilled, made to order — Seattle's own."
+# One or two sentences. Shown in the hero and in search/social previews.
+mission: >
+  Beef, brisket, goat, soya, chicken, and pork — grilled fresh over real
+  coals. Call ahead for pickup, book Beri to grill at your event, or catch
+  him at Seattle-area festivals.
+
+contact:
+  phone_display: "(206) 555-0100"   # TODO: replace with Beri's real number
+  phone_tel: "+12065550100"          # TODO: same number, digits only with country code, used for tel:/sms: links
+  email: ""                          # optional — leave blank to hide
+  service_area: "Seattle & the Eastside"
+  # Never publish an exact home address. Give the general area only; share
+  # the pickup address by phone/text once an order is confirmed.
+  pickup_area: "South Seattle"       # TODO: confirm the neighborhood Beri wants listed
+
+# Leave blank ("") to hide a link.
+social:
+  instagram: ""   # TODO
+  facebook: ""    # TODO
+
+pricing_note: "Priced by the pound / by the order — ask when you call for today's rate."
+
+order_info:
+  lead_time: "Order at least 24 hours ahead when you can — same-day is sometimes possible, just call."
+  pickup_note: "Pickup only, at a South Seattle location. The exact address is shared by phone once your order is confirmed."
+
+booking_info:
+  min_notice: "2+ weeks notice preferred for events"     # TODO: confirm with Beri
+  min_guests: ""                                          # TODO: minimum guest count, if any
+  what_included: >
+    TODO: describe what Beri brings — the grill, the coals, the meat, serving
+    setup — and what the host is expected to provide (space, tables, power).
+
+# Quick list of what's on the grill, shown as chips on the homepage.
+proteins:
+  - "Beef"
+  - "Brisket"
+  - "Goat"
+  - "Soya"
+  - "Chicken"
+  - "Pork"
+
+how_it_works:
+  - title: "Call or text"
+    text: "Tell Beri what you want and how many people you're feeding."
+  - title: "Pick a time"
+    text: "He'll give you a pickup time — or lock in your event date."
+  - title: "Eat well"
+    text: "Pick up hot off the grill, or he brings the fire to you."

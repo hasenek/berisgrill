@@ -1,0 +1,81 @@
+{{ define "main" }}
+{{ $s := site.Data.site }}
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow hero-eyebrow">{{ $s.contact.service_area }}</p>
+    <h1 class="hero-title">{{ $s.tagline }}</h1>
+    <p class="hero-lede">{{ $s.mission }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-accent" href="tel:{{ $s.contact.phone_tel }}">Call to Order</a>
+      <a class="btn btn-ghost" href="{{ "/book-event/" | relURL }}">Book Your Event →</a>
+    </div>
+  </div>
+  <div class="hero-motif" aria-hidden="true">{{ partial "motif.html" . }}</div>
+</section>
+
+<section class="band-proteins">
+  {{ range $s.proteins }}<span class="protein-chip">{{ . }}</span>{{ end }}
+</section>
+
+<section class="section section-how">
+  <div class="section-head">
+    <p class="eyebrow">How it works</p>
+    <h2>Order, book, or catch him at a festival</h2>
+  </div>
+  <div class="card-grid">
+    {{ range $i, $step := $s.how_it_works }}
+    <div class="card step-card">
+      <div class="card-body">
+        <span class="step-num">{{ add $i 1 }}</span>
+        <h3>{{ $step.title }}</h3>
+        <p class="card-summary">{{ $step.text }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ with .Content }}
+<section class="section section-message">
+  <div class="wrap-narrow prose">{{ . }}</div>
+</section>
+{{ end }}
+
+{{ $upcoming := where site.RegularPages "Section" "events" }}
+{{ $upcoming = where $upcoming "Date" ">=" now }}
+{{ $upcoming = $upcoming.ByDate }}
+{{ with $upcoming }}
+<section class="section section-events">
+  <div class="section-head">
+    <p class="eyebrow">Find him live</p>
+    <h2>Upcoming festivals</h2>
+    <a class="see-all" href="{{ "/events/" | relURL }}">All appearances →</a>
+  </div>
+  <div class="card-grid">
+    {{ range first 3 . }}{{ partial "event-card.html" . }}{{ end }}
+  </div>
+</section>
+{{ end }}
+
+<section class="section section-menu">
+  <div class="section-head">
+    <p class="eyebrow">On the grill</p>
+    <h2>Menu</h2>
+    <a class="see-all" href="{{ "/menu/" | relURL }}">Full menu →</a>
+  </div>
+  <div class="card-grid">
+    {{ range first 3 site.Data.menu.categories }}
+    <div class="card">
+      <div class="card-body">
+        <h3>{{ .name }}</h3>
+        <ul class="menu-item-list">
+          {{ range .items }}<li>{{ .name }}</li>{{ end }}
+        </ul>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

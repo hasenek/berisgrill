@@ -1,0 +1,15 @@
+{{- $s := site.Data.site -}}
+<header class="site-head">
+  <a class="brand" href="{{ "/" | relURL }}">
+    <span class="brand-mark" aria-hidden="true">B</span>
+    <span class="brand-name">{{ $s.business_name }}</span>
+  </a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+  <label for="nav-toggle" class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></label>
+  <nav class="site-nav" aria-label="Primary">
+    {{ range site.Menus.main }}
+      <a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+    <a class="nav-call" href="tel:{{ $s.contact.phone_tel }}">Call Now</a>
+  </nav>
+</header>

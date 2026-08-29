@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ $isPast := .Date.Before now }}
+<article class="section wrap-narrow">
+  <header class="page-head">
+    <p class="card-meta">
+      <span class="pill {{ if $isPast }}pill-past{{ else }}pill-upcoming{{ end }}">{{ if $isPast }}Past{{ else }}Upcoming{{ end }}</span>
+      <span class="card-village">{{ .Date.Format "Monday, Jan 2, 2006" }}</span>
+    </p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.location }}<p class="page-sub">📍 {{ . }}</p>{{ end }}
+  </header>
+  <div class="prose">{{ .Content }}</div>
+  {{ with .Params.event_url }}<p><a class="btn btn-ghost" href="{{ . }}" target="_blank" rel="noopener">Festival details →</a></p>{{ end }}
+  <p class="back-link"><a href="{{ "/events/" | relURL }}">← All festivals</a></p>
+</article>
+{{ end }}

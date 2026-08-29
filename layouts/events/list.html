@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{ $upcoming := where .Pages "Date" ">=" now }}
+{{ $past := where .Pages "Date" "<" now }}
+<section class="section wrap">
+  <header class="page-head">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-sub">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose">{{ .Content }}</div>
+
+  <div class="section-head">
+    <h2>Upcoming</h2>
+  </div>
+  {{ with $upcoming.ByDate }}
+    <div class="card-grid">{{ range . }}{{ partial "event-card.html" . }}{{ end }}</div>
+  {{ else }}
+    <p class="page-sub">No upcoming dates confirmed yet — check back soon, or call for the latest.</p>
+  {{ end }}
+
+  {{ with $past.ByDate.Reverse }}
+  <div class="section-head" style="margin-top:48px">
+    <h2>Past appearances</h2>
+  </div>
+  <div class="card-grid">{{ range . }}{{ partial "event-card.html" . }}{{ end }}</div>
+  {{ end }}
+</section>
+{{ end }}

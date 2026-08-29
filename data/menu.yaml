@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# THE MENU. Add or edit items here — no code involved. Each category needs a
+# "name" and a list of "items" (each with a "name" and a short "note").
+# Prices aren't listed per item since Beri prices by weight/order — see
+# `pricing_note` in data/site.yaml. Add a "price" field here later if he
+# switches to fixed pricing.
+# ─────────────────────────────────────────────────────────────────────────────
+categories:
+  - name: "Beef"
+    items:
+      - name: "Grilled Beef Ribs"
+        note: "Charcoal-grilled and smoky."
+      - name: "Beef Kebabs"
+        note: "Skewered and seasoned."
+  - name: "Brisket"
+    items:
+      - name: "Smoked Beef Brisket"
+        note: "Low and slow over coals."
+  - name: "Goat"
+    items:
+      - name: "Grilled Goat"
+        note: "TODO: describe Beri's goat preparation."
+  - name: "Soya"
+    items:
+      - name: "Beef Soya Skewers"
+        note: "Suya-style, grilled and spiced."
+      - name: "Chicken Soya Skewers"
+        note: "Suya-style, grilled and spiced."
+  - name: "Chicken"
+    items:
+      - name: "Grilled Chicken"
+        note: "TODO: describe cut/marinade."
+  - name: "Pork"
+    items:
+      - name: "Grilled Pork"
+        note: "TODO: describe cut/marinade."

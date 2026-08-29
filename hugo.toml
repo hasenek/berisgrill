@@ -1,0 +1,35 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Beri's Grill"
+enableRobotsTXT = true
+# Festival dates are naturally in the future — without this, Hugo silently
+# excludes future-dated content from the build, same as an unpublished draft.
+buildFuture = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Menu"
+    url = "/menu/"
+    weight = 2
+  [[menu.main]]
+    name = "Book an Event"
+    url = "/book-event/"
+    weight = 3
+  [[menu.main]]
+    name = "Festivals"
+    url = "/events/"
+    weight = 4
+  [[menu.main]]
+    name = "Order & Contact"
+    url = "/order/"
+    weight = 5
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  # Most editable facts live in data/site.yaml — not here.

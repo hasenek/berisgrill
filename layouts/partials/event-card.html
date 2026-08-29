@@ -1,0 +1,12 @@
+{{- $isPast := .Date.Before now -}}
+<article class="card">
+  <div class="card-body">
+    <p class="card-meta">
+      <span class="pill {{ if $isPast }}pill-past{{ else }}pill-upcoming{{ end }}">{{ if $isPast }}Past{{ else }}Upcoming{{ end }}</span>
+      <span class="card-village">{{ .Date.Format "Jan 2, 2006" }}</span>
+    </p>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ with .Params.location }}<p class="card-summary">📍 {{ . }}</p>{{ end }}
+    {{ with .Params.summary }}<p class="card-summary">{{ . }}</p>{{ end }}
+  </div>
+</article>
