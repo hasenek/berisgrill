@@ -4,12 +4,12 @@
 # ─────────────────────────────────────────────────────────────────────────────
 
 business_name: "Beri's Grill"
-tagline: "Fire-grilled, made to order — Seattle's own."
+tagline: "Cameroonian-spiced, fire-grilled — Seattle's own."
 # One or two sentences. Shown in the hero and in search/social previews.
 mission: >
-  Beef, brisket, goat, soya, chicken, and pork — grilled fresh over real
-  coals. Call ahead for pickup, book Beri to grill at your event, or catch
-  him at Seattle-area festivals.
+  Beef, brisket, goat, Cameroonian soya, chicken, and pork — grilled fresh
+  over real coals. Call ahead for pickup, book Beri to grill at your event,
+  or catch him at Seattle-area festivals.
 
 contact:
   phone_display: "(206) 555-0100"   # TODO: replace with Beri's real number

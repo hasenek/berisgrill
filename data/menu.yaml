@@ -22,10 +22,8 @@ categories:
         note: "TODO: describe Beri's goat preparation."
   - name: "Soya"
     items:
-      - name: "Beef Soya Skewers"
-        note: "Suya-style, grilled and spiced."
-      - name: "Chicken Soya Skewers"
-        note: "Suya-style, grilled and spiced."
+      - name: "Cameroonian Soya (Brisket)"
+        note: "Beri's Cameroonian spice blend, skewered and grilled — made from brisket."
   - name: "Chicken"
     items:
       - name: "Grilled Chicken"
