@@ -9,10 +9,14 @@ human review. Keep it simple. Don't add features unless asked.
 - **Never publish an exact home address.** Pickup happens at Beri's house —
   the site only names a general neighborhood (`data/site.yaml` →
   `contact.pickup_area`). The real address goes out by phone/text per order.
-- **Confirm real contact info before publishing.** The phone number in
-  `data/site.yaml` is a placeholder (`(206) 555-0100`) until Beri gives the
-  real one. Don't invent prices, guest minimums, or festival dates — mark
-  unknowns `TODO` instead of guessing.
+- **Confirm real contact info before publishing.** The phone number and menu
+  prices in `data/site.yaml`/`data/menu.yaml` come from Beri's own flyer.
+  Don't invent new prices, guest minimums, or festival dates — mark unknowns
+  `TODO` instead of guessing.
+- **Domain is unsettled.** `berisgrill.com` may have an ownership conflict
+  (a prior site there was taken down). `hugo.toml`'s `baseURL` points at the
+  live `workers.dev` URL until that's resolved — don't switch it without
+  confirming Beri actually controls the domain.
 - Make one logical change at a time and summarize what you changed.
 
 ## Where everything lives (the only files you normally edit)

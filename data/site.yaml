@@ -1,19 +1,20 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # THE BUSINESS'S FACTS LIVE HERE. Edit this one file to change the name,
 # phone number, service area, socials, and homepage copy. No code involved.
+# Source: Beri's own promo flyer (berisgrill.com, 206-513-1260).
 # ─────────────────────────────────────────────────────────────────────────────
 
 business_name: "Beri's Grill"
-tagline: "Cameroonian-spiced, fire-grilled — Seattle's own."
+tagline: "We Grill • You Chill"
 # One or two sentences. Shown in the hero and in search/social previews.
 mission: >
-  Beef, brisket, goat, Cameroonian soya, chicken, and pork — grilled fresh
-  over real coals. Call ahead for pickup, book Beri to grill at your event,
-  or catch him at Seattle-area festivals.
+  Your favorite spot for soya, grilled meats, and unforgettable flavor —
+  Cameroonian-spiced, fire-grilled fresh. Order for pickup, book catering
+  for your next event, or catch Beri's Grill at a Seattle-area festival.
 
 contact:
-  phone_display: "(206) 555-0100"   # TODO: replace with Beri's real number
-  phone_tel: "+12065550100"          # TODO: same number, digits only with country code, used for tel:/sms: links
+  phone_display: "(206) 513-1260"
+  phone_tel: "+12065131260"
   email: ""                          # optional — leave blank to hide
   service_area: "Seattle & the Eastside"
   # Never publish an exact home address. Give the general area only; share
@@ -22,10 +23,9 @@ contact:
 
 # Leave blank ("") to hide a link.
 social:
-  instagram: ""   # TODO
-  facebook: ""    # TODO
-
-pricing_note: "Priced by the pound / by the order — ask when you call for today's rate."
+  instagram: "https://instagram.com/beris.grill"
+  facebook: ""    # TODO: the flyer only shows the page name "Beri's Grill," not a URL — get the exact Facebook page link
+  tiktok: "https://www.tiktok.com/@beris.grill"
 
 order_info:
   lead_time: "Order at least 24 hours ahead when you can — same-day is sometimes possible, just call."
@@ -38,14 +38,16 @@ booking_info:
     TODO: describe what Beri brings — the grill, the coals, the meat, serving
     setup — and what the host is expected to provide (space, tables, power).
 
-# Quick list of what's on the grill, shown as chips on the homepage.
-proteins:
-  - "Beef"
-  - "Brisket"
-  - "Goat"
-  - "Soya"
-  - "Chicken"
-  - "Pork"
+# The four badges from the flyer, shown as a highlight band on the homepage.
+features:
+  - title: "Premium Soya"
+    text: "High quality, rich in flavor."
+  - title: "Fresh Ingredients"
+    text: "Always fresh, always delicious."
+  - title: "Perfectly Grilled"
+    text: "Bold taste, smoky perfection."
+  - title: "Made for Every Occasion"
+    text: "Events, parties, or family meals."
 
 how_it_works:
   - title: "Call or text"

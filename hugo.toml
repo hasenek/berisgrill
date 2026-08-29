@@ -1,4 +1,6 @@
-baseURL = "https://example.org/"
+# TODO: switch to "https://berisgrill.com/" once domain ownership/DNS is
+# sorted out — there may be a conflict over who controls that domain.
+baseURL = "https://berisgrill.abanyambiri.workers.dev/"
 languageCode = "en-us"
 title = "Beri's Grill"
 enableRobotsTXT = true

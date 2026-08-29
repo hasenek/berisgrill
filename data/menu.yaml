@@ -1,39 +1,26 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# THE MENU. Add or edit items here — no code involved. Each category needs a
-# "name" and a list of "items" (each with a "name" and a short "note").
-# Prices aren't listed per item since Beri prices by weight/order — see
-# `pricing_note` in data/site.yaml. Add a "price" field here later if he
-# switches to fixed pricing.
+# THE MENU. Source: Beri's own promo flyer. Add/edit products here — no code
+# involved. Each product needs a "name", "price", and short "description".
+# Add a "note" field for anything extra (e.g. "serves a crowd").
 # ─────────────────────────────────────────────────────────────────────────────
-categories:
-  - name: "Beef"
-    items:
-      - name: "Grilled Beef Ribs"
-        note: "Charcoal-grilled and smoky."
-      - name: "Beef Kebabs"
-        note: "Skewered and seasoned."
-  - name: "Brisket"
-    items:
-      - name: "Smoked Beef Brisket"
-        note: "Low and slow over coals."
-  - name: "Goat"
-    items:
-      - name: "Grilled Goat"
-        note: "TODO: describe Beri's goat preparation."
-  - name: "Soya"
-    items:
-      - name: "Cameroonian Soya (Brisket)"
-        note: "Beri's Cameroonian spice blend, skewered and grilled — made from brisket."
-  - name: "Chicken"
-    items:
-      - name: "Grilled Chicken"
-        note: "TODO: describe cut/marinade."
-  - name: "Pork"
-    items:
-      - name: "Grilled Pork"
-        note: "TODO: describe cut/marinade."
+products:
+  - name: "Beri's Bites"
+    price: "$10"
+    description: "Perfect snack-sized cup to satisfy your cravings."
   - name: "Shawarma"
-    items:
-      - name: "Shawarma"
-        note: "TODO: describe filling/wrap."
-        price: "$10 each"
+    price: "$11.99"
+    description: "Seasoned beef, fresh veggies, and our signature sauce — wrapped to perfection."
+  - name: "Beef Pie"
+    price: "$4.99"
+    description: "Flaky crust, bold savory beef filling. Pure satisfaction."
+  - name: "Soya Stash"
+    price: "$25"
+    description: "Beri's Cameroonian-spiced soya, made from brisket. Frozen and massive in flavor — heat, eat, repeat."
+  - name: "Backyard Beri"
+    price: "$200"
+    description: "Feed the fam or a hungry crew. Medium size, maximum flavor."
+    note: "Catering size"
+  - name: "Big Beri"
+    price: "$350"
+    description: "For weddings, events, or feeding a large crowd with serious taste."
+    note: "Catering size"

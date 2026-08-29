@@ -14,8 +14,13 @@
   <div class="hero-motif" aria-hidden="true">{{ partial "motif.html" . }}</div>
 </section>
 
-<section class="band-proteins">
-  {{ range $s.proteins }}<span class="protein-chip">{{ . }}</span>{{ end }}
+<section class="band-features">
+  {{ range $s.features }}
+  <div class="feature-item">
+    <span class="feature-title">{{ .title }}</span>
+    <span class="feature-text">{{ .text }}</span>
+  </div>
+  {{ end }}
 </section>
 
 <section class="section section-how">
@@ -65,13 +70,12 @@
     <a class="see-all" href="{{ "/menu/" | relURL }}">Full menu →</a>
   </div>
   <div class="card-grid">
-    {{ range first 3 site.Data.menu.categories }}
+    {{ range first 3 site.Data.menu.products }}
     <div class="card">
       <div class="card-body">
+        <p class="card-meta"><span class="product-price">{{ .price }}</span></p>
         <h3>{{ .name }}</h3>
-        <ul class="menu-item-list">
-          {{ range .items }}<li>{{ .name }}</li>{{ end }}
-        </ul>
+        <p class="card-summary">{{ .description }}</p>
       </div>
     </div>
     {{ end }}

@@ -61,12 +61,13 @@ img{max-width:100%; display:block}
 .hero-motif{position:absolute; left:0; right:0; bottom:0; color:rgba(232,163,61,.28)}
 .motif svg{display:block}
 
-/* ---- protein chip band ---- */
-.band-proteins{display:flex; flex-wrap:wrap; gap:10px; justify-content:center;
-  max-width:var(--wrap); margin:-30px auto 0; padding:22px 24px; position:relative; z-index:2;
+/* ---- feature badge band ---- */
+.band-features{display:flex; flex-wrap:wrap; gap:22px; justify-content:center;
+  max-width:var(--wrap); margin:-30px auto 0; padding:26px 24px; position:relative; z-index:2;
   background:var(--white); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); width:calc(100% - 48px)}
-.protein-chip{font-family:"Bricolage Grotesque"; font-weight:700; font-size:.92rem; color:var(--ink);
-  background:var(--cream-2); border-radius:999px; padding:.5em 1.1em}
+.feature-item{display:flex; flex-direction:column; align-items:center; text-align:center; max-width:180px}
+.feature-title{font-family:"Bricolage Grotesque"; font-weight:700; font-size:.98rem; color:var(--ink)}
+.feature-text{font-size:.82rem; color:var(--muted); margin-top:.25em}
 
 /* ---- sections ---- */
 .section{padding:74px 0}
@@ -112,6 +113,7 @@ img{max-width:100%; display:block}
 .menu-item-name{font-weight:700; color:var(--ink)}
 .menu-item-price{font-weight:700; color:var(--ember-600); font-size:.92rem}
 .menu-item-note{color:var(--muted); font-size:.92rem}
+.product-price{font-family:"Bricolage Grotesque"; font-weight:800; font-size:1.15rem; color:var(--ember-600)}
 
 /* ---- footer ---- */
 .site-foot{background:var(--char-900); color:var(--cream); margin-top:0; padding:64px 24px 30px}

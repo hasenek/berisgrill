@@ -5,8 +5,8 @@ A fast, low-cost website for Beri's Grill (Seattle), built with
 edited by hand or by an AI maintainer agent (see `CLAUDE.md`).
 
 ## What's here
-- Home — hero, "how it works," a festivals teaser, a menu preview
-- **Menu** — beef, brisket, goat, soya, chicken, pork
+- Home — hero, feature badges, "how it works," a festivals teaser, a menu preview
+- **Menu** — Beri's Bites, Shawarma, Beef Pie, Soya Stash, Backyard Beri, Big Beri
 - **Book an Event** — Beri grills on-site at private events
 - **Festivals** — where to find him at Seattle-area cultural events (e.g. Umoja Fest)
 - **Order & Contact** — phone-in orders, pickup info
@@ -17,21 +17,22 @@ edited by hand or by an AI maintainer agent (see `CLAUDE.md`).
 3. Open http://localhost:1313
 
 ## First things to fill in (search the repo for `TODO`)
-- Real phone number → `data/site.yaml` (`contact.phone_display`, `contact.phone_tel`)
 - Pickup neighborhood → `data/site.yaml` (`contact.pickup_area`)
-- Instagram/Facebook links → `data/site.yaml` (`social`)
+- Exact Facebook page URL → `data/site.yaml` (`social.facebook`)
 - Booking details (notice period, guest minimum, what's included) → `data/site.yaml` (`booking_info`)
-- Real menu items/descriptions → `data/menu.yaml`
-- Beri's story → `content/_index.md`
-- Confirmed festival dates/locations → `content/events/`
+- Beri's story (a bit more detail) → `content/_index.md`
+- Confirmed Umoja Fest date/location → `content/events/umoja-fest.md`
+- `baseURL` in `hugo.toml` currently points at the live `workers.dev` URL — switch
+  it to `berisgrill.com` once domain ownership/DNS is sorted out
 
-## Deploy (free)
-Same pattern as our other small-business sites: push to `main`, connect the
-GitHub repo to Cloudflare Workers (static assets) via Git integration in the
-Cloudflare dashboard, and it auto-deploys on every push.
+## Deploy
+Live now at **https://berisgrill.abanyambiri.workers.dev** (deployed via
+`wrangler deploy`). For auto-deploy on every push — same pattern as our other
+small-business sites — connect the GitHub repo to Cloudflare Workers via Git
+integration in the Cloudflare dashboard:
 Build command: `hugo --gc --minify` · Output dir: `public` · set
-`HUGO_VERSION` in the Cloudflare dashboard's build settings.
-Point a custom domain at it when ready. Estimated cost: just the domain (~$12/yr).
+`HUGO_VERSION=0.164.0` in the dashboard's build settings.
+A custom domain (berisgrill.com) can be pointed at it later — see the TODO above.
 
 ## Editing without code
 See `CLAUDE.md` — it tells the maintainer agent exactly which file maps to
