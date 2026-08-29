@@ -37,6 +37,9 @@ Build command: `hugo --gc --minify` · Output dir: `public` · set
 Renewal: the domain is a 1-year registration — make sure it renews (or
 renew manually) before it lapses.
 
+Git integration is connected as of 2026-08-29 — pushes to `main` should
+now auto-deploy without needing `wrangler deploy`.
+
 ## Editing without code
 See `CLAUDE.md` — it tells the maintainer agent exactly which file maps to
 which part of the site.
