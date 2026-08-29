@@ -110,6 +110,7 @@ img{max-width:100%; display:block}
 .menu-category h2{font-size:1.4rem; margin-bottom:.6em}
 .menu-item-list-full li{display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 12px; padding:12px 0; border-bottom:1px solid var(--line)}
 .menu-item-name{font-weight:700; color:var(--ink)}
+.menu-item-price{font-weight:700; color:var(--ember-600); font-size:.92rem}
 .menu-item-note{color:var(--muted); font-size:.92rem}
 
 /* ---- footer ---- */

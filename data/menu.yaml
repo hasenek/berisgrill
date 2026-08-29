@@ -34,3 +34,8 @@ categories:
     items:
       - name: "Grilled Pork"
         note: "TODO: describe cut/marinade."
+  - name: "Shawarma"
+    items:
+      - name: "Shawarma"
+        note: "TODO: describe filling/wrap."
+        price: "$10 each"

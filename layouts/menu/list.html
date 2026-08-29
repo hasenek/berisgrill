@@ -16,6 +16,7 @@
         {{ range .items }}
         <li>
           <span class="menu-item-name">{{ .name }}</span>
+          {{ with .price }}<span class="menu-item-price">{{ . }}</span>{{ end }}
           {{ with .note }}<span class="menu-item-note">{{ . }}</span>{{ end }}
         </li>
         {{ end }}
