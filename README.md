@@ -22,17 +22,20 @@ edited by hand or by an AI maintainer agent (see `CLAUDE.md`).
 - Booking details (notice period, guest minimum, what's included) → `data/site.yaml` (`booking_info`)
 - Beri's story (a bit more detail) → `content/_index.md`
 - Confirmed Umoja Fest date/location → `content/events/umoja-fest.md`
-- `baseURL` in `hugo.toml` currently points at the live `workers.dev` URL — switch
-  it to `berisgrill.com` once domain ownership/DNS is sorted out
 
 ## Deploy
-Live now at **https://berisgrill.abanyambiri.workers.dev** (deployed via
-`wrangler deploy`). For auto-deploy on every push — same pattern as our other
-small-business sites — connect the GitHub repo to Cloudflare Workers via Git
-integration in the Cloudflare dashboard:
+Live at **https://berisgrill.com** (registered via Cloudflare Registrar,
+1-year term) and **https://berisgrill.abanyambiri.workers.dev** (kept as a
+backup URL). Both were attached via `wrangler deploy --domains berisgrill.com`.
+
+For auto-deploy on every push — same pattern as our other small-business
+sites — connect the GitHub repo to Cloudflare Workers via Git integration in
+the Cloudflare dashboard:
 Build command: `hugo --gc --minify` · Output dir: `public` · set
 `HUGO_VERSION=0.164.0` in the dashboard's build settings.
-A custom domain (berisgrill.com) can be pointed at it later — see the TODO above.
+
+Renewal: the domain is a 1-year registration — make sure it renews (or
+renew manually) before it lapses.
 
 ## Editing without code
 See `CLAUDE.md` — it tells the maintainer agent exactly which file maps to

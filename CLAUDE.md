@@ -13,10 +13,9 @@ human review. Keep it simple. Don't add features unless asked.
   prices in `data/site.yaml`/`data/menu.yaml` come from Beri's own flyer.
   Don't invent new prices, guest minimums, or festival dates — mark unknowns
   `TODO` instead of guessing.
-- **Domain is unsettled.** `berisgrill.com` may have an ownership conflict
-  (a prior site there was taken down). `hugo.toml`'s `baseURL` points at the
-  live `workers.dev` URL until that's resolved — don't switch it without
-  confirming Beri actually controls the domain.
+- **Domain is settled.** `berisgrill.com` is registered (Cloudflare
+  Registrar, 1-year term) and attached to the Worker. `hugo.toml`'s
+  `baseURL` points at it. Note the renewal date so it doesn't lapse.
 - Make one logical change at a time and summarize what you changed.
 
 ## Where everything lives (the only files you normally edit)
