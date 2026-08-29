@@ -52,7 +52,7 @@ img{max-width:100%; display:block}
 .nav-burger span{width:24px; height:2px; background:var(--ink); border-radius:2px}
 
 /* ---- hero ---- */
-.hero{position:relative; background:var(--char-900); color:var(--cream); overflow:hidden}
+.hero{position:relative; background:var(--char-900) center/cover no-repeat; color:var(--cream); overflow:hidden}
 .hero-inner{max-width:var(--wrap); margin-inline:auto; padding:96px 24px 110px}
 .hero-eyebrow{color:rgba(250,243,232,.65)}
 .hero-title{font-size:clamp(2.6rem,6vw,4.6rem); font-weight:800; max-width:16ch; margin:.1em 0 .5em}
@@ -85,11 +85,15 @@ img{max-width:100%; display:block}
 .prose h2{font-size:1.5rem; margin:1.8em 0 .5em}
 .prose p{margin:0 0 1.1em}
 .prose ul,.prose ol{padding-left:1.2em}
+.story-grid{display:grid; grid-template-columns:220px 1fr; gap:32px; align-items:start}
+.story-img{width:100%; border-radius:var(--r); box-shadow:var(--shadow); object-fit:cover; aspect-ratio:1/1}
+@media (max-width:640px){.story-grid{grid-template-columns:1fr}.story-img{max-width:220px}}
 
 /* ---- cards ---- */
 .card-grid{max-width:var(--wrap); margin-inline:auto; padding-inline:24px; display:grid; gap:24px; grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
 .card{background:var(--white); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow); transition:transform .18s ease}
 .card:hover{transform:translateY(-3px)}
+.card-cover{height:160px; background:var(--cream-2) center/cover no-repeat}
 .card-body{padding:20px 22px 24px}
 .card-meta{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:0 0 10px}
 .card h3{font-size:1.22rem; font-weight:700; margin-bottom:.35em}

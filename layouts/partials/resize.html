@@ -1,0 +1,5 @@
+{{- $img := resources.Get .path -}}
+{{- if $img -}}
+  {{- $resized := $img.Resize (printf "%dx q82" .width) -}}
+  {{- $resized.RelPermalink -}}
+{{- end -}}

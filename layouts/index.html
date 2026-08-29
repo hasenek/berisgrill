@@ -1,7 +1,8 @@
 {{ define "main" }}
 {{ $s := site.Data.site }}
+{{ $heroImg := partial "resize.html" (dict "path" "img/hero-skewer-plate.jpg" "width" 1800) }}
 
-<section class="hero">
+<section class="hero"{{ with $heroImg }} style="background-image:linear-gradient(rgba(28,24,21,.72),rgba(28,24,21,.82)),url('{{ . }}')"{{ end }}>
   <div class="hero-inner">
     <p class="eyebrow hero-eyebrow">{{ $s.contact.service_area }}</p>
     <h1 class="hero-title">{{ $s.tagline }}</h1>
@@ -42,8 +43,12 @@
 </section>
 
 {{ with .Content }}
+{{ $storyImg := partial "resize.html" (dict "path" "img/story-slicing.jpg" "width" 900) }}
 <section class="section section-message">
-  <div class="wrap-narrow prose">{{ . }}</div>
+  <div class="wrap-narrow story-grid">
+    {{ with $storyImg }}<img class="story-img" src="{{ . }}" alt="Beri slicing fresh off the grill">{{ end }}
+    <div class="prose">{{ . }}</div>
+  </div>
 </section>
 {{ end }}
 
@@ -72,6 +77,10 @@
   <div class="card-grid">
     {{ range first 3 site.Data.menu.products }}
     <div class="card">
+      {{ with .image }}
+        {{ $cover := partial "resize.html" (dict "path" . "width" 700) }}
+        {{ with $cover }}<div class="card-cover" style="background-image:url('{{ . }}')"></div>{{ end }}
+      {{ end }}
       <div class="card-body">
         <p class="card-meta"><span class="product-price">{{ .price }}</span></p>
         <h3>{{ .name }}</h3>

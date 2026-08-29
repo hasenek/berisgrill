@@ -10,6 +10,10 @@
   <div class="card-grid">
     {{ range site.Data.menu.products }}
     <div class="card">
+      {{ with .image }}
+        {{ $cover := partial "resize.html" (dict "path" . "width" 700) }}
+        {{ with $cover }}<div class="card-cover" style="background-image:url('{{ . }}')"></div>{{ end }}
+      {{ end }}
       <div class="card-body">
         <p class="card-meta">
           <span class="product-price">{{ .price }}</span>

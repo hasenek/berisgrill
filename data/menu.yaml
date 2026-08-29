@@ -1,26 +1,33 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # THE MENU. Source: Beri's own promo flyer. Add/edit products here — no code
 # involved. Each product needs a "name", "price", and short "description".
-# Add a "note" field for anything extra (e.g. "serves a crowd").
+# "image" is optional — path under assets/img/ (dropped there, not static/img/,
+# so Hugo can resize it). "note" is optional too (e.g. "serves a crowd").
 # ─────────────────────────────────────────────────────────────────────────────
 products:
   - name: "Beri's Bites"
     price: "$10"
     description: "Perfect snack-sized cup to satisfy your cravings."
+    image: "img/menu-beris-bites.jpg"
   - name: "Shawarma"
     price: "$11.99"
     description: "Seasoned beef, fresh veggies, and our signature sauce — wrapped to perfection."
+    image: "img/menu-shawarma.jpg"
   - name: "Beef Pie"
     price: "$4.99"
     description: "Flaky crust, bold savory beef filling. Pure satisfaction."
+    # TODO: no photo of this one yet — add one to assets/img/ and set image: "img/menu-beef-pie.jpg"
   - name: "Soya Stash"
     price: "$25"
     description: "Beri's Cameroonian-spiced soya, made from brisket. Frozen and massive in flavor — heat, eat, repeat."
+    image: "img/menu-soya-stash.jpg"
   - name: "Backyard Beri"
     price: "$200"
     description: "Feed the fam or a hungry crew. Medium size, maximum flavor."
     note: "Catering size"
+    image: "img/menu-catering-tray.jpg"
   - name: "Big Beri"
     price: "$350"
     description: "For weddings, events, or feeding a large crowd with serious taste."
     note: "Catering size"
+    image: "img/menu-catering-tray.jpg"
