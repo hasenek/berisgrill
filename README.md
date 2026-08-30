@@ -7,7 +7,7 @@ edited by hand or by an AI maintainer agent (see `CLAUDE.md`).
 ## What's here
 - Home — hero, feature badges, "how it works," a festivals teaser, a menu preview
 - **Menu** — Beri's Bites, Shawarma, Beef Pie, Soya Stash, Backyard Beri, Big Beri
-- **Book an Event** — Beri grills on-site at private events
+- **Book an Event** — Chef Ron grills on-site at private events
 - **Festivals** — where to find him at Seattle-area cultural events (e.g. Umoja Fest)
 - **Order & Contact** — phone-in orders, pickup info
 
@@ -20,7 +20,7 @@ edited by hand or by an AI maintainer agent (see `CLAUDE.md`).
 - Pickup neighborhood → `data/site.yaml` (`contact.pickup_area`)
 - Exact Facebook page URL → `data/site.yaml` (`social.facebook`)
 - Booking details (notice period, guest minimum, what's included) → `data/site.yaml` (`booking_info`)
-- Beri's story (a bit more detail) → `content/_index.md`
+- Fish, ribs, chicken as dedicated menu items (mentioned in the story, not yet on the flyer's menu list) → `data/menu.yaml`
 - Confirmed Umoja Fest date/location → `content/events/umoja-fest.md`
 
 ## Deploy

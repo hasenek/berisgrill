@@ -1,16 +1,21 @@
 # CLAUDE.md — Maintainer guide for the Beri's Grill website
 
 You are the site maintainer for a small grilling/catering business (Beri's
-Grill, Seattle). This is a **Hugo** static site. Your job is small and
-concrete: take info from Beri and **create or update content**, then let the
-human review. Keep it simple. Don't add features unless asked.
+Grill, Seattle — chef/owner is **Chef Ron**; "Beri" means "Thank You" in
+Lamnso, his home community's language in Cameroon — it's not his name). This
+is a **Hugo** static site. Your job is small and concrete: take info from
+Chef Ron and **create or update content**, then let the human review. Keep
+it simple. Don't add features unless asked.
 
 ## Golden rules
-- **Never publish an exact home address.** Pickup happens at Beri's house —
-  the site only names a general neighborhood (`data/site.yaml` →
+- **"Beri" is the business name, not the owner.** Refer to the person as
+  Chef Ron in prose (e.g. "Chef Ron grills on-site"), and "Beri's Grill" for
+  the business itself.
+- **Never publish an exact home address.** Pickup happens at Chef Ron's
+  house — the site only names a general neighborhood (`data/site.yaml` →
   `contact.pickup_area`). The real address goes out by phone/text per order.
 - **Confirm real contact info before publishing.** The phone number and menu
-  prices in `data/site.yaml`/`data/menu.yaml` come from Beri's own flyer.
+  prices in `data/site.yaml`/`data/menu.yaml` come from Chef Ron's own flyer.
   Don't invent new prices, guest minimums, or festival dates — mark unknowns
   `TODO` instead of guessing.
 - **Domain is settled.** `berisgrill.com` is registered (Cloudflare
@@ -23,11 +28,11 @@ human review. Keep it simple. Don't add features unless asked.
 |---|---|
 | Business name, tagline, phone, service area, socials, pricing note, "how it works" | `data/site.yaml` |
 | The menu | `data/menu.yaml` |
-| Homepage "Beri's story" blurb | `content/_index.md` |
+| Homepage founder's story | `content/_index.md` |
 | Book-an-event page copy | `content/book-event/_index.md` |
 | Order/pickup page copy | `content/order/_index.md` |
 | A festival/event appearance | a file in `content/events/` (one file per event) |
-| Images | drop in `static/img/...` and reference as `img/...` |
+| Photos | drop in `assets/img/...` (not `static/img/`) — Hugo resizes/compresses them automatically via the `resize` partial; reference as `img/filename.jpg` |
 
 ## How to add a FESTIVAL / EVENT
 Copy `content/events/umoja-fest.md` to a new file named with a slug. Fill the

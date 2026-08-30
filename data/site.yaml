@@ -1,7 +1,7 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # THE BUSINESS'S FACTS LIVE HERE. Edit this one file to change the name,
 # phone number, service area, socials, and homepage copy. No code involved.
-# Source: Beri's own promo flyer (berisgrill.com, 206-513-1260).
+# Source: Chef Ron's own promo flyer (berisgrill.com, 206-513-1260).
 # ─────────────────────────────────────────────────────────────────────────────
 
 business_name: "Beri's Grill"
@@ -9,8 +9,8 @@ tagline: "We Grill • You Chill"
 # One or two sentences. Shown in the hero and in search/social previews.
 mission: >
   Your favorite spot for soya, grilled meats, and unforgettable flavor —
-  Cameroonian-spiced, fire-grilled fresh. Order for pickup, book catering
-  for your next event, or catch Beri's Grill at a Seattle-area festival.
+  Cameroonian-spiced, fire-grilled fresh. Order for pickup, book Chef Ron for
+  your next event, or catch Beri's Grill at a Seattle-area festival.
 
 contact:
   phone_display: "(206) 513-1260"
@@ -19,7 +19,7 @@ contact:
   service_area: "Seattle & the Eastside"
   # Never publish an exact home address. Give the general area only; share
   # the pickup address by phone/text once an order is confirmed.
-  pickup_area: "South Seattle"       # TODO: confirm the neighborhood Beri wants listed
+  pickup_area: "South Seattle"       # TODO: confirm the neighborhood Chef Ron wants listed
 
 # Leave blank ("") to hide a link.
 social:
@@ -32,11 +32,11 @@ order_info:
   pickup_note: "Pickup only, at a South Seattle location. The exact address is shared by phone once your order is confirmed."
 
 booking_info:
-  min_notice: "2+ weeks notice preferred for events"     # TODO: confirm with Beri
+  min_notice: "2+ weeks notice preferred for events"     # TODO: confirm with Chef Ron
   min_guests: ""                                          # TODO: minimum guest count, if any
   what_included: >
-    TODO: describe what Beri brings — the grill, the coals, the meat, serving
-    setup — and what the host is expected to provide (space, tables, power).
+    TODO: describe what Chef Ron brings — the grill, the coals, the meat,
+    serving setup — and what the host is expected to provide (space, tables, power).
 
 # The four badges from the flyer, shown as a highlight band on the homepage.
 features:
@@ -51,7 +51,7 @@ features:
 
 how_it_works:
   - title: "Call or text"
-    text: "Tell Beri what you want and how many people you're feeding."
+    text: "Tell Chef Ron what you want and how many people you're feeding."
   - title: "Pick a time"
     text: "He'll give you a pickup time — or lock in your event date."
   - title: "Eat well"

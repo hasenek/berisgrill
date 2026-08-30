@@ -1,8 +1,13 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# THE MENU. Source: Beri's own promo flyer. Add/edit products here — no code
-# involved. Each product needs a "name", "price", and short "description".
+# THE MENU. Source: Chef Ron's own promo flyer. Add/edit products here — no
+# code involved. Each product needs a "name", "price", and short "description".
 # "image" is optional — path under assets/img/ (dropped there, not static/img/,
 # so Hugo can resize it). "note" is optional too (e.g. "serves a crowd").
+#
+# TODO: the homepage story mentions fish, ribs, and chicken as things Beri's
+# Grill serves, but they're not on the flyer as their own line items — confirm
+# with Chef Ron whether these need dedicated entries here or are already
+# covered within the catering trays (Backyard Beri / Big Beri).
 # ─────────────────────────────────────────────────────────────────────────────
 products:
   - name: "Beri's Bites"
@@ -19,7 +24,7 @@ products:
     # TODO: no photo of this one yet — add one to assets/img/ and set image: "img/menu-beef-pie.jpg"
   - name: "Soya Stash"
     price: "$25"
-    description: "Beri's Cameroonian-spiced soya, made from brisket. Frozen and massive in flavor — heat, eat, repeat."
+    description: "Chef Ron's Cameroonian-spiced soya, made from brisket. Frozen and massive in flavor — heat, eat, repeat."
     image: "img/menu-soya-stash.jpg"
   - name: "Backyard Beri"
     price: "$200"
