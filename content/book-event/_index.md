@@ -9,16 +9,14 @@ He brings the fire; you bring the guests.
 
 ## What's included
 
-*TODO: describe what Chef Ron brings — the grill, the coals, the meat,
-serving setup — and what the host is expected to provide (space, tables,
-power, etc.).*
+Every event is different, so Chef Ron works out the details with you by
+phone — the grill, the menu, and the quantities are all tailored to your
+group size and the occasion.
 
 ## How to book
 
 1. Call or text **{{< site "contact.phone_display" >}}** with your event date, location, and headcount.
-2. Chef Ron will confirm availability and talk through the menu and quantities.
+2. Chef Ron will confirm availability and walk you through the menu, quantities, and pricing.
 3. {{< site "booking_info.min_notice" >}}.
-
-*TODO: note deposit/payment terms here if Chef Ron requires them.*
 
 Want to see him in action first? Check where he's [grilling at a festival](/events/) near you.

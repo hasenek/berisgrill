@@ -16,8 +16,18 @@ it simple. Don't add features unless asked.
   `contact.pickup_area`). The real address goes out by phone/text per order.
 - **Confirm real contact info before publishing.** The phone number and menu
   prices in `data/site.yaml`/`data/menu.yaml` come from Chef Ron's own flyer.
-  Don't invent new prices, guest minimums, or festival dates — mark unknowns
-  `TODO` instead of guessing.
+  Don't invent new prices, guest minimums, or festival dates.
+- **Never let "TODO" or a placeholder fact reach a live page.** A visible
+  "TODO: ..." note, or a guessed value presented as real (like a made-up
+  event date), looks broken or misleading to a visitor — this is a public
+  site, not a draft. `TODO` comments are fine in YAML/front matter (never
+  rendered), but the rendered body text must always read as finished. If a
+  detail isn't confirmed yet: write generic-but-true copy instead of a
+  placeholder (e.g. "ask when you call" rather than inventing terms), or if
+  the whole page can't stand without the missing fact (e.g. an event with no
+  real date), set `draft: true` in its front matter so Hugo excludes it from
+  the production build until it's ready — don't publish a fake date/detail
+  just to have something to show.
 - **Domain is settled.** `berisgrill.com` is registered (Cloudflare
   Registrar, 1-year term) and attached to the Worker. `hugo.toml`'s
   `baseURL` points at it. Note the renewal date so it doesn't lapse.
