@@ -1,0 +1,6 @@
+{{- $img := resources.Get .path -}}
+{{- if $img -}}
+  {{- $anchor := .anchor | default "Center" -}}
+  {{- $square := $img.Fill (printf "%dx%d %s" .size .size $anchor) -}}
+  {{- $square.RelPermalink -}}
+{{- end -}}

@@ -3,7 +3,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ if .IsHome }}{{ $s.business_name }}{{ else }}{{ .Title }} · {{ $s.business_name }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ $s.mission }}{{ end }}">
-<link rel="icon" href="{{ "img/logo.jpg" | relURL }}">
+{{- $favicon32 := partial "favicon.html" (dict "path" "img/logo.jpg" "size" 32) }}
+{{- $favicon192 := partial "favicon.html" (dict "path" "img/logo.jpg" "size" 192) }}
+{{- $favicon180 := partial "favicon.html" (dict "path" "img/logo.jpg" "size" 180) }}
+{{- with $favicon32 }}<link rel="icon" type="image/jpeg" sizes="32x32" href="{{ . }}">{{ end }}
+{{- with $favicon192 }}<link rel="icon" type="image/jpeg" sizes="192x192" href="{{ . }}">{{ end }}
+{{- with $favicon180 }}<link rel="apple-touch-icon" sizes="180x180" href="{{ . }}">{{ end }}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
