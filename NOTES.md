@@ -29,19 +29,28 @@ change often, so re-verify before committing to one.
   address directly.
 
 ## 3. Payment
-**Recommendation: Square**
-- Beri sells both in-person (festivals — needs a card reader) and via
-  pickup/catering (needs online payment links or invoices). Square covers
-  both under one account with no monthly fee:
-  - In-person (Square Reader): 2.6% + $0.15/tap
-  - Online checkout/invoices (hosted): ~3.3% + $0.30
-- **Alternative — Stripe Payment Links**: cheaper for online-only (2.9% +
-  $0.30) and dead simple — one link per menu item (e.g. a "Buy Big Beri —
-  $350" button), but no physical card reader story for festivals.
-- **Zero-fee fallback**: Venmo/Zelle — no fees, and likely already how some
-  customers pay him informally, but no invoicing/bookkeeping trail. Fine as
-  a listed option, not a replacement for real payment processing once
-  volume grows.
+**Update 2026-08-30: Chef Ron already has a National Bankcard account** —
+this changes the recommendation. National Bankcard (nationalbankcard.com) is
+a real merchant services provider (registered ISO/MSP of Wells Fargo), not
+just a debit card. It typically covers:
+  - In-person card payments (festivals) via a physical reader/terminal —
+    likely already sorted if he has an account.
+  - Online payments via their Authorize.Net gateway integration — either a
+    merchant-side "virtual terminal" (he keys the card in manually) or a
+    hosted checkout page that could work as a website "Pay Now" link.
+- **Open question for Chef Ron**: does his plan include a payment
+  link/hosted checkout page usable on the website, or is it in-person-only?
+  If yes → wire that in directly, no new signup needed. If in-person-only →
+  still want something lightweight for the website side.
+- **Fallback if National Bankcard doesn't cover online**: Stripe Payment
+  Links — cheapest/simplest for online-only (2.9% + $0.30), one link per
+  menu item (e.g. a "Buy Big Beri — $350" button).
+- **Square** (2.6% + $0.15/tap in-person, ~3.3% + $0.30 online) was the
+  original recommendation before knowing about National Bankcard — only
+  reconsider this if Chef Ron wants to consolidate onto a single provider
+  and isn't attached to keeping National Bankcard.
+- **Zero-fee fallback**: Venmo/Zelle — no fees, likely already how some
+  customers pay him informally, but no invoicing/bookkeeping trail.
 - Whichever is picked, only add payment *buttons/links* to specific menu
   items or the booking flow — don't build a cart/checkout system, that's
   well beyond what a static site needs here.
