@@ -38,10 +38,14 @@ just a debit card. It typically covers:
   - Online payments via their Authorize.Net gateway integration — either a
     merchant-side "virtual terminal" (he keys the card in manually) or a
     hosted checkout page that could work as a website "Pay Now" link.
-- **Open question for Chef Ron**: does his plan include a payment
-  link/hosted checkout page usable on the website, or is it in-person-only?
-  If yes → wire that in directly, no new signup needed. If in-person-only →
-  still want something lightweight for the website side.
+- **Update: the old berisgrill.com reportedly had online payment working**,
+  so the National Bankcard account very likely already includes the
+  hosted-checkout/payment-link piece, not just the in-person terminal.
+  Waiting on Chef Ron to find the old link/embed code (his National
+  Bankcard portal, an old email, or the previous web person) or to
+  regenerate one via National Bankcard support — hosted payment links are
+  typically standalone URLs not tied to the old site's domain, so the same
+  one (or a freshly generated one) should drop straight into the new site.
 - **Fallback if National Bankcard doesn't cover online**: Stripe Payment
   Links — cheapest/simplest for online-only (2.9% + $0.30), one link per
   menu item (e.g. a "Buy Big Beri — $350" button).
